@@ -167,7 +167,7 @@ ggplot(edu_time, aes(x = YEAR, y = n, color = factor(`Abortion Ban`))) +
 
 #-------------------------------------------------------------------------
 # Graph set 4: Income
-
+log_income = log(data$INCWAGE)
 # Graph 4.0: Income distribution
 ggplot(data, aes(x = log_income)) +
   geom_histogram(bins = 40, fill = "#4C72B0", color = "white") +
